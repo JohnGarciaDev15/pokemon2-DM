@@ -15,8 +15,7 @@ export class Pokemon2Dm extends LitElement {
       image: pokemon.sprites.front_default,
       abilities: pokemon.abilities.map(ability => ability.ability.name).join(', '),
     }));
-
-    console.log('Filtered Pokemon:', filteredPokemons);
+  
     return filteredPokemons;
   }
 }
